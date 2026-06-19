@@ -17,8 +17,9 @@
 }
 
 .product-featured-image {
-    width: 100%;
-    max-width: 420px;
+    height: auto;
+    max-height: 600px;
+    width: auto;
     margin: 0 auto;
     display: block;
     aspect-ratio: 4 / 5;
