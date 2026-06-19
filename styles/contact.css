@@ -1,0 +1,110 @@
+/* ==========================================================================
+   CONTACT SECTION
+   ========================================================================== */
+.contact-section {
+    background-color: var(--color-bg);
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info-panel {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.01);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    padding: 4rem 3.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    transition: border-color 0.4s ease;
+}
+
+.contact-info-panel:hover {
+    border-color: rgba(223, 168, 108, 0.15);
+}
+
+.contact-info-panel h3 {
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+.panel-desc {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.info-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.info-icon {
+    font-size: 1.25rem;
+    background: rgba(223, 168, 108, 0.08);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--color-accent);
+    flex-shrink: 0;
+    border: 1px solid rgba(223, 168, 108, 0.15);
+}
+
+.info-item h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0.35rem;
+    letter-spacing: 0.02em;
+}
+
+.info-item p {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Enlaces limpios e interactivos controlados desde CSS */
+.contact-link {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+    color: var(--color-accent);
+    outline: none;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+@media (max-width: 768px) {
+    .contact-info-panel {
+        padding: 3rem 2rem;
+        border-radius: 1.25rem;
+    }
+    
+    .contact-info-panel h3 {
+        font-size: 1.75rem;
+    }
+}
