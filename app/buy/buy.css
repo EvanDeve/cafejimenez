@@ -18,6 +18,9 @@
 
 .product-featured-image {
     width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    display: block;
     aspect-ratio: 4 / 5;
     object-fit: cover;
     border-radius: 1.25rem;
