@@ -11,11 +11,15 @@ html {
 }
 
 :root {
-    --font-serif: 'Playfair Display', serif;
-    --font-sans: 'DM Sans', sans-serif;
+    --font-serif: var(--font-playfair), serif;
+    --font-sans: var(--font-dm-sans), sans-serif;
 
     --color-text: #ffffff;
     --color-text-muted: rgba(255, 255, 255, 0.85);
+
+    --color-bg: #0d0907;
+    --color-accent: #dfa86c;
+    --color-accent-hover: #e5b986;
 
     --color-button: #965813;
     --color-button-hover: #a86518;
@@ -55,9 +59,16 @@ body {
     justify-content: center; /* Centered navbar capsule */
 }
 
-/* Hero-specific top breathing room */
-.hero .navbar {
+/* Hero-specific top breathing room — Header overlays the hero section on the home route */
+.navbar-home-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
     padding-top: 4vh;
+    padding-left: 6vw;
+    padding-right: 6vw;
 }
 
 .nav-capsule {

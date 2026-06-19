@@ -82,7 +82,6 @@
     margin: 0;
 }
 
-/* Enlaces limpios e interactivos controlados desde CSS */
 .contact-link {
     color: var(--color-text-muted);
     text-decoration: none;
@@ -103,7 +102,7 @@
         padding: 3rem 2rem;
         border-radius: 1.25rem;
     }
-    
+
     .contact-info-panel h3 {
         font-size: 1.75rem;
     }

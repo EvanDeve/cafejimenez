@@ -1,5 +1,5 @@
 /* ==========================================================================
-   PRODUCT SHOWCASE REFAC
+   PRODUCT SHOWCASE
    ========================================================================== */
 .product-showcase-section {
     background-color: var(--color-bg);
@@ -20,7 +20,7 @@
     width: 100%;
     aspect-ratio: 4 / 5;
     object-fit: cover;
-    border-radius: 1.25rem; /* Bordes suaves y elegantes */
+    border-radius: 1.25rem;
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
 }
 
@@ -55,7 +55,6 @@
     margin: 0;
 }
 
-/* Ficha Técnica sin cajas, ultra limpia */
 .product-spec-row {
     display: flex;
     gap: 3rem;
@@ -91,7 +90,7 @@
 }
 
 .product-action-block .btn {
-    width: fit-content; /* Respeta el diseño nativo del botón global */
+    width: fit-content;
 }
 
 .cta-note {
@@ -100,7 +99,7 @@
 }
 
 /* ==========================================================================
-   PLANS & SUBSCRIPTIONS (Suavizado y sin ruido)
+   PLANS & SUBSCRIPTIONS
    ========================================================================== */
 .subscription-section {
     background-color: var(--color-bg);
@@ -118,7 +117,7 @@
 .subscription-card {
     background-color: rgba(255, 255, 255, 0.01);
     border: 1px solid rgba(255, 255, 255, 0.04);
-    border-radius: 1.25rem; /* Bordes redondeados sutiles para suavizar la estética */
+    border-radius: 1.25rem;
     padding: 3.5rem 2.5rem;
     display: flex;
     flex-direction: column;
@@ -126,7 +125,6 @@
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s;
 }
 
-/* Tarjeta destacada asimétrica permanente */
 .subscription-card.popular {
     border-color: rgba(223, 168, 108, 0.2);
     background-color: rgba(223, 168, 108, 0.01);
@@ -152,7 +150,7 @@
     text-transform: uppercase;
     letter-spacing: 0.15em;
     padding: 0.35rem 1rem;
-    border-radius: 50px; /* Tag en píldora original */
+    border-radius: 50px;
 }
 
 .plan-header {
@@ -203,7 +201,6 @@
     font-weight: 400;
 }
 
-/* Lista limpia sin los iconos de check pesados */
 .plan-features {
     list-style: none;
     display: flex;
@@ -233,10 +230,10 @@
 }
 
 .plan-footer .btn {
-    width: 100%; /* El botón conserva su diseño global pero se expande al ancho de la tarjeta */
+    width: 100%;
 }
 
-/* Stripe Badge Estilo Original */
+/* Stripe Badge */
 .stripe-badge {
     display: flex;
     align-items: center;
@@ -249,7 +246,7 @@
 
 .stripe-badge i {
     font-size: 2rem;
-    color: #635bff; /* Color oficial de Stripe para autenticidad */
+    color: #635bff;
 }
 
 /* ==========================================================================
@@ -260,26 +257,7 @@
         grid-template-columns: 1fr;
         gap: 3rem;
     }
-    
-    .subscription-grid {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
 
-    .subscription-card.popular {
-        transform: translateY(0);
-    }
-}
-
-/* ==========================================================================
-   RESPONSIVE OVERRIDES
-   ========================================================================== */
-@media (max-width: 992px) {
-    .product-detail-grid {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-    
     .subscription-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
