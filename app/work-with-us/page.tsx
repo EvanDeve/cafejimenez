@@ -45,8 +45,8 @@ export default function WorkWithUsPage() {
             </div>
             <div className="work-image-block">
               <Image
-                src="/mockup-montana-provisions.png"
-                alt="Montana Provisions Branded Coffee Bag Mockup"
+                src="/screen.png"
+                alt="Café Jiménez Branded Coffee Bag"
                 width={800}
                 height={800}
                 priority
