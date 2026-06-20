@@ -10,17 +10,21 @@ export const metadata: Metadata = {
 export default function WorkWithUsPage() {
   return (
     <main className="subpage">
+      <section className="work-hero">
+        <div className="work-hero-bg" aria-hidden="true" />
+        <div className="work-hero-gradient" aria-hidden="true" />
+        
+        <div className="work-hero-content">
+          <h1>Work With Us</h1>
+          <p>
+            Create a coffee experience that reflects your brand. We partner with businesses to produce custom coffee
+            bags featuring your company’s logo, colors, and messaging.
+          </p>
+        </div>
+      </section>
+
       <section className="section work-section">
         <div className="section-container">
-          <header className="work-header">
-            <span className="section-badge">WORK WITH US</span>
-            <h1 className="work-main-title">Personalized Coffee for Companies</h1>
-            <p className="work-intro-text">
-              Create a coffee experience that reflects your brand. We partner with businesses to produce custom coffee
-              bags featuring your company’s logo, colors, and messaging.
-            </p>
-          </header>
-
           <div className="work-grid">
             <div className="work-text-block">
               <h3>A Unique Brand Experience</h3>
