@@ -46,9 +46,16 @@ export default function WorkWithUsPage() {
             <div className="work-image-block">
               <Image
                 src="/screen.png"
-                alt="Café Jiménez Branded Coffee Bag"
-                width={800}
-                height={800}
+                alt="Café Jiménez Branded Coffee Bag Front"
+                width={400}
+                height={500}
+                priority
+              />
+              <Image
+                src="/screen-back.png"
+                alt="Café Jiménez Branded Coffee Bag Back"
+                width={400}
+                height={500}
                 priority
               />
             </div>
