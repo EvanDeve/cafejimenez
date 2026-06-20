@@ -12,7 +12,7 @@ const PLANS = [
     name: "Single Ritual",
     volume: "1 Bag of Coffee",
     desc: "For those who consider morning coffee sacred. Perfect for a steady, personal supply.",
-    price: "$18.50",
+    price: "$18.00",
     features: [
       "1x 12oz Whole Bean Bag",
       "Exclusive Hacienda La Minita Lot",
@@ -44,7 +44,7 @@ const PLANS = [
     name: "Bulk Connoisseur",
     volume: "2 Bags of 5 lbs",
     desc: "Designed for boutique offices, large families, or creative studios where the grinder never rests.",
-    price: "$120.00",
+    price: "$130.00",
     features: [
       "10 lbs total in premium packaging",
       "Ideal for preserving in whole bean form",
@@ -76,7 +76,7 @@ export default function BuyPage() {
             </div>
 
             <div className="product-info-column">
-              <span className="product-location-meta">Hacienda La Minita · Tarrazú, Costa Rica</span>
+              <span className="product-location-meta">Coffee from Tarrazú, Costa Rica</span>
               <h1 className="product-title">
                 Café Jiménez
                 <br />
@@ -108,7 +108,7 @@ export default function BuyPage() {
                 <a href="#subscriptions" className="btn btn-primary">
                   View Subscription Plans
                 </a>
-                <p className="cta-note">Freshly roasted whole beans delivered monthly starting from $18.50.</p>
+                <p className="cta-note">Freshly roasted whole beans delivered monthly starting from $18.00.</p>
               </div>
             </div>
           </div>

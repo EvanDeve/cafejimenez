@@ -67,7 +67,7 @@ export default function HomePage() {
 
       {/* TRUSTED BY — Client Logos */}
       <section className="clients-section" aria-label="Trusted by">
-        <p className="clients-label">Trusted by families, churches &amp; businesses</p>
+        <p className="clients-label">Trusted by</p>
         <div className="logos-static-row">
           {CLIENT_LOGOS.map((logo) => (
             <div className="logo-item" key={logo.src}>
@@ -118,7 +118,7 @@ export default function HomePage() {
               <p>
                 Coffee is literally in the heritage of the Jiménez family. At the heart of our mission is a desire
                 to roast excellent coffee and share hope in everything we do. This starts with our love for coffee
-                — including the way we purchase our beans, how we treat the growers, and how we serve those who
+                — including the way we purchase our beans, how the farmers are treated, and how we serve those who
                 purchase this product.
               </p>
             </div>
@@ -153,7 +153,7 @@ export default function HomePage() {
           <header className="section-header">
             <span className="section-badge">What People Say</span>
             <h2>Loved by Coffee Lovers</h2>
-            <p>Real stories from families, churches, and businesses who start their mornings with Café Jiménez.</p>
+            <p>Real stories from families and businesses who start their mornings with Café Jiménez.</p>
           </header>
 
           <div className="testimonials-grid">
