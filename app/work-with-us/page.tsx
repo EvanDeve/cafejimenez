@@ -4,7 +4,7 @@ import Link from "next/link";
 import "./work-with-us.css";
 
 export const metadata: Metadata = {
-  title: "Work With Us - Personalized Coffee for Companies",
+  title: "Made For You - Personalized Coffee for Companies",
 };
 
 export default function WorkWithUsPage() {
@@ -15,7 +15,7 @@ export default function WorkWithUsPage() {
         <div className="work-hero-gradient" aria-hidden="true" />
         
         <div className="work-hero-content">
-          <h1>Work With Us</h1>
+          <h1>Made For You</h1>
           <p>
             Create a coffee experience that reflects your brand. We partner with businesses to produce custom coffee
             bags featuring your company’s logo, colors, and messaging.
@@ -101,7 +101,7 @@ export default function WorkWithUsPage() {
                 <i className="fa-solid fa-box-open"></i>
               </div>
               <h4>Flexible Quantities</h4>
-              <p>We work with orders of various sizes, allowing small businesses to get custom coffee too.</p>
+              <p>We work with orders of 12oz bags, allowing small businesses to get custom coffee too.</p>
             </div>
 
             <div className="offer-card">

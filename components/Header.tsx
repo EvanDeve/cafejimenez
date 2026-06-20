@@ -8,7 +8,7 @@ const NAV_LINKS = [
   { href: "/", label: "HOME" },
   { href: "/buy", label: "BUY CAFÉ JIMÉNEZ" },
   { href: "/gallery", label: "GALLERY" },
-  { href: "/work-with-us", label: "WORK WITH US" },
+  { href: "/work-with-us", label: "MADE FOR YOU" },
   { href: "/contact", label: "CONTACT US" },
 ];
 
