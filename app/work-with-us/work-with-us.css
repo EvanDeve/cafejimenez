@@ -1,0 +1,157 @@
+/* ==========================================================================
+   WORK WITH US SECTION
+   ========================================================================== */
+.work-section {
+    background-color: var(--color-bg);
+    background-image: radial-gradient(circle at 50% 20%, #1a1210 0%, var(--color-bg) 70%);
+}
+
+.work-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 5rem auto;
+}
+
+.work-main-title {
+    font-family: var(--font-serif);
+    font-size: clamp(3rem, 5vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.work-intro-text {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: var(--color-text-muted);
+}
+
+/* Two-column layout */
+.work-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.work-text-block h3 {
+    font-family: var(--font-serif);
+    font-size: 2.2rem;
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+}
+
+.work-text-block p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.work-image-block {
+    position: relative;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.work-image-block img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.work-image-block:hover img {
+    transform: scale(1.02);
+}
+
+/* What we offer */
+.offer-section {
+    background-color: rgba(255, 255, 255, 0.02);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 6rem 0;
+}
+
+.offer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.offer-card {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 1.25rem;
+    padding: 2.5rem;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(223, 168, 108, 0.2);
+}
+
+.offer-icon {
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+    background: rgba(223, 168, 108, 0.1);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.offer-card h4 {
+    font-size: 1.15rem;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+.offer-card p {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+/* CTA Footer */
+.work-cta {
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.work-cta h2 {
+    font-family: var(--font-serif);
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .work-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .offer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .offer-grid {
+        grid-template-columns: 1fr;
+    }
+    .work-cta h2 {
+        font-size: 2rem;
+    }
+}
