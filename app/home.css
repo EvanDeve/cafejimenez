@@ -62,9 +62,9 @@
     max-width: 600px;
 }
 
-/* HERO BUTTONS */
 .hero-buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 1.25rem;
     justify-content: center;
     align-items: center;
@@ -544,5 +544,11 @@
 
     .featured-testimonial {
         transform: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-item span {
+        font-size: 0.65rem;
     }
 }

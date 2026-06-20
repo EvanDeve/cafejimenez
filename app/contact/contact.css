@@ -107,3 +107,9 @@
         font-size: 1.75rem;
     }
 }
+
+@media (max-width: 480px) {
+    .contact-info-panel {
+        padding: 2rem 1.5rem;
+    }
+}

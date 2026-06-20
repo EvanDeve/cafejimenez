@@ -18,7 +18,7 @@
 
 .product-featured-image {
     height: auto;
-    max-height: 600px;
+    max-height: min(600px, 60vh);
     width: auto;
     margin: 0 auto;
     display: block;
@@ -269,5 +269,12 @@
 
     .subscription-card.popular {
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .product-spec-row {
+        gap: 1.5rem;
+        flex-wrap: wrap;
     }
 }
