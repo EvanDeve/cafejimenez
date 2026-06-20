@@ -20,6 +20,11 @@ export default function WorkWithUsPage() {
             Create a coffee experience that reflects your brand. We partner with businesses to produce custom coffee
             bags featuring your company’s logo, colors, and messaging.
           </p>
+          <div className="work-hero-buttons">
+            <Link href="/contact" className="btn btn-primary">
+              Get in Touch
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -51,7 +56,7 @@ export default function WorkWithUsPage() {
         </div>
       </section>
 
-      <section className="offer-section">
+      <section className="section offer-section">
         <div className="section-container">
           <header className="section-header">
             <span className="section-badge">WHAT WE OFFER</span>
@@ -110,7 +115,7 @@ export default function WorkWithUsPage() {
         </div>
       </section>
 
-      <section className="work-cta">
+      <section className="section work-cta">
         <div className="section-container">
           <h2>Turn every cup into a branded experience</h2>
           <Link href="/contact" className="btn btn-primary">
