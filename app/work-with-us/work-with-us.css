@@ -121,17 +121,21 @@
 
 .work-image-block {
     position: relative;
-    border-radius: 1.5rem;
-    overflow: hidden;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
 }
 
 .work-image-block img {
-    width: 100%;
     height: auto;
+    max-height: min(600px, 60vh);
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
     display: block;
+    aspect-ratio: 4 / 5;
     object-fit: cover;
+    border-radius: 1.25rem;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
     transition: transform 0.5s ease;
 }
 
