@@ -47,15 +47,15 @@ export default function WorkWithUsPage() {
               <Image
                 src="/screen.png"
                 alt="Café Jiménez Branded Coffee Bag Front"
-                width={400}
-                height={500}
+                width={800}
+                height={1000}
                 priority
               />
               <Image
                 src="/screen-back.png"
                 alt="Café Jiménez Branded Coffee Bag Back"
-                width={400}
-                height={500}
+                width={800}
+                height={1000}
                 priority
               />
             </div>
