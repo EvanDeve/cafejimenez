@@ -20,6 +20,7 @@
     height: auto;
     max-height: min(600px, 60vh);
     width: auto;
+    max-width: 100%;
     margin: 0 auto;
     display: block;
     aspect-ratio: 4 / 5;
