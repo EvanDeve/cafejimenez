@@ -1,5 +1,6 @@
 import Link from "next/link";
 import YoutubeFacade from "@/components/YoutubeFacade";
+import FadeIn from "@/components/FadeIn";
 import "./home.css";
 
 const CLIENT_LOGOS = [
@@ -67,33 +68,37 @@ export default function HomePage() {
 
       {/* TRUSTED BY — Client Logos */}
       <section className="clients-section" aria-label="Trusted by">
-        <p className="clients-label">Trusted by</p>
-        <div className="logos-static-row">
-          {CLIENT_LOGOS.map((logo) => (
-            <div className="logo-item" key={logo.src}>
-              {/* plain <img>: tiny vector SVGs styled via CSS filter, no optimization benefit from next/image */}
-              <img src={logo.src} alt={logo.alt} />
-              <span>
-                {logo.lines[0]}
-                <br />
-                {logo.lines[1]}
-              </span>
-            </div>
-          ))}
-        </div>
+        <FadeIn delay={0.2} direction="up">
+          <p className="clients-label">Trusted by</p>
+          <div className="logos-static-row">
+            {CLIENT_LOGOS.map((logo) => (
+              <div className="logo-item" key={logo.src}>
+                {/* plain <img>: tiny vector SVGs styled via CSS filter, no optimization benefit from next/image */}
+                <img src={logo.src} alt={logo.alt} />
+                <span>
+                  {logo.lines[0]}
+                  <br />
+                  {logo.lines[1]}
+                </span>
+              </div>
+            ))}
+          </div>
+        </FadeIn>
       </section>
 
       {/* ABOUT / MISSION SECTION */}
       <section id="about" className="section about-section">
         <div className="section-container">
-          <header className="section-header about-header">
-            <span className="section-badge">Coffee with a Mission</span>
-            <h2>Our Heritage &amp; Mission</h2>
-            <p>
-              From the highlands of Costa Rica&apos;s Tarrazú Valley to your cup — every bag carries the legacy of a
-              family passionate about exceptional coffee.
-            </p>
-          </header>
+          <FadeIn direction="up">
+            <header className="section-header about-header">
+              <span className="section-badge">Coffee with a Mission</span>
+              <h2>Our Heritage &amp; Mission</h2>
+              <p>
+                From the highlands of Costa Rica&apos;s Tarrazú Valley to your cup — every bag carries the legacy of a
+                family passionate about exceptional coffee.
+              </p>
+            </header>
+          </FadeIn>
 
           <div className="about-tags-row-container">
             <div className="about-tags">
@@ -113,7 +118,7 @@ export default function HomePage() {
           </div>
 
           <div className="about-main-grid">
-            <div className="about-text-block about-text-1">
+            <FadeIn delay={0.1} direction="up" className="about-text-block about-text-1">
               <h3>Who We Are</h3>
               <p>
                 Coffee is literally in the heritage of the Jiménez family. At the heart of our mission is a desire
@@ -121,9 +126,9 @@ export default function HomePage() {
                 — including the way we purchase our beans, how the farmers are treated, and how we serve those who
                 purchase this product.
               </p>
-            </div>
+            </FadeIn>
 
-            <div className="about-text-block about-text-2">
+            <FadeIn delay={0.2} direction="up" className="about-text-block about-text-2">
               <h3>Hacienda La Minita</h3>
               <p>
                 Café Jiménez sources 100% single-origin Costa Rican coffee from the legendary Hacienda La Minita —
@@ -131,9 +136,9 @@ export default function HomePage() {
                 comes from the Western part of Tarrazú Valley, one of the most celebrated coffee regions in the
                 world.
               </p>
-            </div>
+            </FadeIn>
 
-            <div className="about-media-block about-media-2">
+            <FadeIn delay={0.3} direction="up" className="about-media-block about-media-2">
               <YoutubeFacade
                 videoId="ksTG5ypLNI0"
                 title="Café Jiménez — Costa Rica La Minita Tarrazú Coffee"
@@ -142,7 +147,7 @@ export default function HomePage() {
               <p className="video-caption">
                 Costa Rica La Minita Tarrazú — The lighter side of a world-class bean.
               </p>
-            </div>
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -157,27 +162,28 @@ export default function HomePage() {
           </header>
 
           <div className="testimonials-grid">
-            {TESTIMONIALS.map((t) => (
-              <article
-                key={t.name}
-                className={`testimonial-card ${t.featured ? "featured-testimonial" : ""}`}
-              >
-                <div className="testimonial-stars" aria-label="5 stars">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <i className="fa-solid fa-star" key={i} />
-                  ))}
-                </div>
-                <blockquote className="testimonial-quote">&quot;{t.quote}&quot;</blockquote>
-                <footer className="testimonial-author">
-                  <div className="author-avatar" aria-hidden="true">
-                    <i className="fa-solid fa-user" />
+            {TESTIMONIALS.map((t, index) => (
+              <FadeIn delay={index * 0.15} direction="up" key={t.name}>
+                <article
+                  className={`testimonial-card ${t.featured ? "featured-testimonial" : ""}`}
+                >
+                  <div className="testimonial-stars" aria-label="5 stars">
+                    {Array.from({ length: 5 }).map((_, i) => (
+                      <i className="fa-solid fa-star" key={i} />
+                    ))}
                   </div>
-                  <div className="author-info">
-                    <span className="author-name">{t.name}</span>
-                    <span className="author-role">{t.role}</span>
-                  </div>
-                </footer>
-              </article>
+                  <blockquote className="testimonial-quote">&quot;{t.quote}&quot;</blockquote>
+                  <footer className="testimonial-author">
+                    <div className="author-avatar" aria-hidden="true">
+                      <i className="fa-solid fa-user" />
+                    </div>
+                    <div className="author-info">
+                      <span className="author-name">{t.name}</span>
+                      <span className="author-role">{t.role}</span>
+                    </div>
+                  </footer>
+                </article>
+              </FadeIn>
             ))}
           </div>
         </div>

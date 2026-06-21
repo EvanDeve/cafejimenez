@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
+import FadeIn from "@/components/FadeIn";
 import "./buy.css";
 
 export const metadata: Metadata = {
@@ -64,19 +66,19 @@ export default function BuyPage() {
       <section id="product-showcase" className="section product-showcase-section">
         <div className="section-container">
           <div className="product-detail-grid">
-            <div className="product-gallery">
+            <FadeIn direction="right" className="product-image-container">
               <Image
-                src="/hero.png"
+                src="/jimenez.png"
                 alt="Café Jiménez Single Origin Bag"
-                width={920}
-                height={1150}
+                width={800}
+                height={1000}
                 className="product-featured-image"
                 priority
               />
-            </div>
+            </FadeIn>
 
-            <div className="product-info-column">
-              <span className="product-location-meta">Coffee from Tarrazú, Costa Rica</span>
+            <FadeIn direction="left" delay={0.2} className="product-info-container">
+              <span className="product-origin-label">COFFEE FROM TARRAZÚ, COSTA RICA</span>
               <h1 className="product-title">
                 Café Jiménez
                 <br />
@@ -104,13 +106,13 @@ export default function BuyPage() {
                 </div>
               </div>
 
-              <div className="product-action-block">
-                <a href="#subscriptions" className="btn btn-primary">
+              <div className="product-actions">
+                <Link href="#subscriptions" className="btn btn-primary">
                   View Subscription Plans
-                </a>
-                <p className="cta-note">Freshly roasted whole beans delivered monthly starting from $18.00.</p>
+                </Link>
+                <p className="pricing-note">Freshly roasted whole beans delivered monthly starting from $18.00.</p>
               </div>
-            </div>
+            </FadeIn>
           </div>
         </div>
       </section>

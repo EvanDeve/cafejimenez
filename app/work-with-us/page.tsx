@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import FadeIn from "@/components/FadeIn";
 import "./work-with-us.css";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Made For You - Personalized Coffee for Companies",
 };
 
@@ -31,7 +31,7 @@ export default function WorkWithUsPage() {
       <section className="section work-section">
         <div className="section-container">
           <div className="work-grid">
-            <div className="work-text-block">
+            <FadeIn direction="up" className="work-text-block">
               <h3>A Unique Brand Experience</h3>
               <p>
                 Whether you're looking for corporate gifts, employee appreciation packages, event giveaways, client
@@ -42,8 +42,8 @@ export default function WorkWithUsPage() {
                 Our team works closely with you to ensure every detail aligns with your brand identity, delivering a
                 unique and memorable product that leaves a lasting impression with customers, employees, and partners.
               </p>
-            </div>
-            <div className="work-image-block">
+            </FadeIn>
+            <FadeIn direction="up" delay={0.2} className="work-image-block">
               <Image
                 src="/screen.png"
                 alt="Café Jiménez Branded Coffee Bag Front"
@@ -58,7 +58,7 @@ export default function WorkWithUsPage() {
                 height={1000}
                 priority
               />
-            </div>
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -71,65 +71,60 @@ export default function WorkWithUsPage() {
           </header>
           
           <div className="offer-grid">
-            <div className="offer-card">
-              <div className="offer-icon">
-                <i className="fa-solid fa-pen-nib"></i>
-              </div>
-              <h4>Custom-branded Design</h4>
-              <p>Coffee bags designed specifically with your logo, typography, and brand colors.</p>
-            </div>
-            
-            <div className="offer-card">
-              <div className="offer-icon">
-                <i className="fa-solid fa-seedling"></i>
-              </div>
-              <h4>Premium Coffee Blend</h4>
-              <p>Selection of the finest high-altitude single origin beans from Tarrazú, Costa Rica.</p>
-            </div>
-
-            <div className="offer-card">
-              <div className="offer-icon">
-                <i className="fa-solid fa-gift"></i>
-              </div>
-              <h4>Corporate Gifts</h4>
-              <p>Ideal for client welcome kits, employee appreciation packages, and promotional products.</p>
-            </div>
-
-            <div className="offer-card">
-              <div className="offer-icon">
-                <i className="fa-solid fa-people-group"></i>
-              </div>
-              <h4>Event Packages</h4>
-              <p>Perfect for conferences, weddings, and special events to leave a lasting impression.</p>
-            </div>
-
-            <div className="offer-card">
-              <div className="offer-icon">
-                <i className="fa-solid fa-box-open"></i>
-              </div>
-              <h4>Flexible Quantities</h4>
-              <p>We work with orders of 12oz bags, allowing small businesses to get custom coffee too.</p>
-            </div>
-
-            <div className="offer-card">
-              <div className="offer-icon">
-                <i className="fa-solid fa-truck-fast"></i>
-              </div>
-              <h4>End-to-End Support</h4>
-              <p>Full production, roasting, packaging, and logistical support from start to finish.</p>
-            </div>
+            {[
+              {
+                icon: "fa-pen-nib",
+                title: "Custom-branded Design",
+                desc: "Coffee bags designed specifically with your logo, typography, and brand colors."
+              },
+              {
+                icon: "fa-seedling",
+                title: "Premium Coffee Blend",
+                desc: "Selection of the finest high-altitude single origin beans from Tarrazú, Costa Rica."
+              },
+              {
+                icon: "fa-gift",
+                title: "Corporate Gifts",
+                desc: "Ideal for client welcome kits, employee appreciation packages, and promotional products."
+              },
+              {
+                icon: "fa-people-group",
+                title: "Event Packages",
+                desc: "Perfect for conferences, weddings, and special events to leave a lasting impression."
+              },
+              {
+                icon: "fa-box-open",
+                title: "Flexible Quantities",
+                desc: "We work with orders of 12oz bags, allowing small businesses to get custom coffee too."
+              },
+              {
+                icon: "fa-truck-fast",
+                title: "End-to-End Support",
+                desc: "Full production, roasting, packaging, and logistical support from start to finish."
+              }
+            ].map((offer, i) => (
+              <FadeIn direction="up" delay={i * 0.1} key={offer.title}>
+                <div className="offer-card">
+                  <div className="offer-icon">
+                    <i className={`fa-solid ${offer.icon}`}></i>
+                  </div>
+                  <h4>{offer.title}</h4>
+                  <p>{offer.desc}</p>
+                </div>
+              </FadeIn>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="section work-cta">
+      <FadeIn direction="up" className="section work-cta">
         <div className="section-container">
           <h2>Turn every cup into a branded experience</h2>
           <Link href="/contact" className="btn btn-primary">
             Start Your Project
           </Link>
         </div>
-      </section>
+      </FadeIn>
     </main>
   );
 }
