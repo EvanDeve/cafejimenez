@@ -66,9 +66,9 @@ export default function BuyPage() {
       <section id="product-showcase" className="section product-showcase-section">
         <div className="section-container">
           <div className="product-detail-grid">
-            <FadeIn direction="right" className="product-image-container">
+            <FadeIn direction="right" className="product-gallery">
               <Image
-                src="/jimenez.png"
+                src="/hero.png"
                 alt="Café Jiménez Single Origin Bag"
                 width={800}
                 height={1000}
@@ -77,40 +77,42 @@ export default function BuyPage() {
               />
             </FadeIn>
 
-            <FadeIn direction="left" delay={0.2} className="product-info-container">
-              <span className="product-origin-label">COFFEE FROM TARRAZÚ, COSTA RICA</span>
+            <FadeIn direction="left" delay={0.2} className="product-info-column">
+              <span className="product-location-meta">COFFEE FROM TARRAZÚ, COSTA RICA</span>
               <h1 className="product-title">
                 Café Jiménez
                 <br />
                 Single Origin
               </h1>
+              
+              <div className="product-description">
+                <p>
+                  An exceptional high-altitude coffee, hand-picked between 1,200 and 2,000 meters. This selection
+                  stands out for its deep notes of dark cocoa, subtle hints of sweet citrus, and a brilliantly balanced
+                  acidity—fully washed in pure mountain spring water and artisan-roasted in micro-lots.
+                </p>
+              </div>
 
-              <p className="product-description">
-                An exceptional high-altitude coffee, hand-picked between 1,200 and 2,000 meters. This selection
-                stands out for its deep notes of dark cocoa, subtle hints of sweet citrus, and a brilliantly
-                balanced acidity—fully washed in pure mountain spring water and artisan-roasted in micro-lots.
-              </p>
-
-              <div className="product-spec-row">
+              <div className="product-specs-grid">
                 <div className="spec-item">
-                  <span className="spec-label">Roast</span>
+                  <span className="spec-label">ROAST</span>
                   <span className="spec-value">Medium Artisan</span>
                 </div>
                 <div className="spec-item">
-                  <span className="spec-label">Process</span>
+                  <span className="spec-label">PROCESS</span>
                   <span className="spec-value">Fully Washed</span>
                 </div>
                 <div className="spec-item">
-                  <span className="spec-label">Origin</span>
+                  <span className="spec-label">ORIGIN</span>
                   <span className="spec-value">100% Tarrazú</span>
                 </div>
               </div>
 
-              <div className="product-actions">
+              <div className="product-action-block">
                 <Link href="#subscriptions" className="btn btn-primary">
                   View Subscription Plans
                 </Link>
-                <p className="pricing-note">Freshly roasted whole beans delivered monthly starting from $18.00.</p>
+                <p className="cta-note">Freshly roasted whole beans delivered monthly starting from $18.00.</p>
               </div>
             </FadeIn>
           </div>
