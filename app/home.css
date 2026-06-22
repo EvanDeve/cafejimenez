@@ -183,12 +183,17 @@
 }
 
 .logo-item img {
-    width: 140px;
-    height: 70px;
+    width: 220px;
+    height: 110px;
     object-fit: contain;
     display: block;
     filter: brightness(0) invert(1);
     transition: filter 0.3s ease, transform 0.3s ease;
+    
+    /* Prevenir copia y arrastre de imágenes */
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .logo-item:hover img {
