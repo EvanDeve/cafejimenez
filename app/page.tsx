@@ -4,9 +4,9 @@ import FadeIn from "@/components/FadeIn";
 import "./home.css";
 
 const CLIENT_LOGOS = [
-  { src: "/logos/applied.jpeg", alt: "Applied", lines: ["Applied", ""] },
-  { src: "/logos/corner.jpeg", alt: "Corner", lines: ["Corner", ""] },
-  { src: "/logos/ritzy.jpeg", alt: "Ritzy", lines: ["Ritzy", ""] },
+  { src: "/logos/applied_surety_underwrites.png", alt: "Applied", lines: ["Applied", ""] },
+  { src: "/logos/corner_books.png", alt: "Corner Books", lines: ["Corner", "Books"] },
+  { src: "/logos/ritzy.png", alt: "Ritzy", lines: ["Ritzy", ""] },
 ];
 
 const TESTIMONIALS = [
