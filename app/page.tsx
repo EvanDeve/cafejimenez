@@ -4,11 +4,9 @@ import FadeIn from "@/components/FadeIn";
 import "./home.css";
 
 const CLIENT_LOGOS = [
-  { src: "/logos/grace-community.svg", alt: "Grace Community Church", lines: ["Grace Community", "Church"] },
-  { src: "/logos/bridger-mtn.svg", alt: "Bridger Mountain Coffee Co.", lines: ["Bridger Mountain", "Coffee Co."] },
-  { src: "/logos/calvary-chapel.svg", alt: "Calvary Chapel Bozeman", lines: ["Calvary Chapel", "Bozeman"] },
-  { src: "/logos/corner-roast.svg", alt: "The Corner Roast", lines: ["The Corner", "Roast"] },
-  { src: "/logos/montana-provisions.svg", alt: "Montana Provisions", lines: ["Montana", "Provisions"] },
+  { src: "/logos/applied.jpeg", alt: "Applied", lines: ["Applied", ""] },
+  { src: "/logos/corner.jpeg", alt: "Corner", lines: ["Corner", ""] },
+  { src: "/logos/ritzy.jpeg", alt: "Ritzy", lines: ["Ritzy", ""] },
 ];
 
 const TESTIMONIALS = [

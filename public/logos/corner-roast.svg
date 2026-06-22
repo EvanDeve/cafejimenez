@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none">
-  <path d="M14 26 Q14 42 28 42 Q42 42 42 26 Z" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
-  <line x1="14" y1="26" x2="42" y2="26" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
-  <path d="M42 30 Q50 30 50 37 Q50 44 42 44" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
-  <path d="M20 22 Q18 16 20 12" stroke="white" stroke-width="1.8" stroke-linecap="round" opacity="0.55"/>
-  <path d="M28 22 Q26 15 28 10" stroke="white" stroke-width="1.8" stroke-linecap="round" opacity="0.55"/>
-  <path d="M36 22 Q34 16 36 12" stroke="white" stroke-width="1.8" stroke-linecap="round" opacity="0.55"/>
-  <line x1="10" y1="44" x2="46" y2="44" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
-</svg>
