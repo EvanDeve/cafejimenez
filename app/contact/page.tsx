@@ -27,7 +27,6 @@ export default function ContactPage() {
                   jorge.jimenez@costaricafe.com
                 </a>
               </p>
-              <span className="card-hint">Available 24/7</span>
             </div>
 
             <div className="contact-card highlighted">
@@ -40,7 +39,6 @@ export default function ContactPage() {
                   +1 (707) 918 4422
                 </a>
               </p>
-              <span className="card-hint">Mon-Fri, 9am-5pm EST</span>
             </div>
 
             <div className="contact-card">
@@ -49,7 +47,6 @@ export default function ContactPage() {
               </div>
               <h3>Location</h3>
               <p>Lakeside, Montana, USA</p>
-              <span className="card-hint">Global Shipping</span>
             </div>
           </div>
         </div>
