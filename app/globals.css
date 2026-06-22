@@ -61,12 +61,12 @@ body {
 
 /* Hero-specific top breathing room — Header overlays the hero section on the home route */
 .navbar-home-overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
-    padding-top: 4vh;
+    z-index: 1000;
+    padding-top: 3vh;
     padding-left: 6vw;
     padding-right: 6vw;
 }
@@ -454,5 +454,41 @@ body {
 @media (max-width: 480px) {
     .section {
         padding: 60px 0;
+    }
+}
+
+/* WhatsApp Float Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+    text-decoration: none;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.15);
+    background-color: #1ebe57;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
     }
 }

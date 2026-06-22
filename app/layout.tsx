@@ -30,6 +30,17 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        
+        {/* WhatsApp Float Button */}
+        <a
+          href="https://wa.me/17079184422"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="whatsapp-float"
+          aria-label="Chat with us on WhatsApp"
+        >
+          <i className="fa-brands fa-whatsapp"></i>
+        </a>
       </body>
     </html>
   );
