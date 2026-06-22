@@ -16,48 +16,40 @@ export default function ContactPage() {
             <p>Have questions about our beans, bulk orders, or shipping? Reach out directly to our team.</p>
           </header>
 
-          <div className="contact-wrapper">
-            <div className="contact-info-panel">
-              <h3>Contact Information</h3>
-              <p className="panel-desc">Connect with us via email or explore our operational locations.</p>
-
-              <div className="info-list">
-                <div className="info-item">
-                  <span className="info-icon">
-                    <i className="fa-solid fa-location-dot" />
-                  </span>
-                  <div>
-                    <h4>Location</h4>
-                    <p>San Marcos de Tarrazú, Costa Rica &amp; Montana, USA</p>
-                  </div>
-                </div>
-                <div className="info-item">
-                  <span className="info-icon">
-                    <i className="fa-solid fa-envelope" />
-                  </span>
-                  <div>
-                    <h4>Email Us</h4>
-                    <p>
-                      <a href="mailto:info@cafejimenez.com" className="contact-link">
-                        info@cafejimenez.com
-                      </a>
-                    </p>
-                  </div>
-                </div>
-                <div className="info-item">
-                  <span className="info-icon">
-                    <i className="fa-solid fa-globe" />
-                  </span>
-                  <div>
-                    <h4>Website</h4>
-                    <p>
-                      <a href="https://cafejimenez.com" target="_blank" rel="noopener noreferrer" className="contact-link">
-                        cafejimenez.com
-                      </a>
-                    </p>
-                  </div>
-                </div>
+          <div className="contact-grid">
+            <div className="contact-card">
+              <div className="contact-card-icon">
+                <i className="fa-solid fa-envelope" />
               </div>
+              <h3>Email Us</h3>
+              <p>
+                <a href="mailto:jorge.jimenez@costaricafe.com" className="contact-link">
+                  jorge.jimenez@costaricafe.com
+                </a>
+              </p>
+              <span className="card-hint">Available 24/7</span>
+            </div>
+
+            <div className="contact-card highlighted">
+              <div className="contact-card-icon">
+                <i className="fa-solid fa-phone" />
+              </div>
+              <h3>Call Us</h3>
+              <p>
+                <a href="tel:+17079184422" className="contact-link">
+                  +1 (707) 918 4422
+                </a>
+              </p>
+              <span className="card-hint">Mon-Fri, 9am-5pm EST</span>
+            </div>
+
+            <div className="contact-card">
+              <div className="contact-card-icon">
+                <i className="fa-solid fa-location-dot" />
+              </div>
+              <h3>Location</h3>
+              <p>Lakeside, Montana, USA</p>
+              <span className="card-hint">Global Shipping</span>
             </div>
           </div>
         </div>

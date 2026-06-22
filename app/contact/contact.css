@@ -6,86 +6,88 @@
 }
 
 .contact-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 600px;
+    /* Kept for safety if used elsewhere */
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
-.contact-info-panel {
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.01);
-    border: 1px solid rgba(255, 255, 255, 0.04);
-    padding: 4rem 3.5rem;
+.contact-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius: 1.5rem;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-    transition: border-color 0.4s ease;
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
 }
 
-.contact-info-panel:hover {
+.contact-card:hover {
+    border-color: rgba(223, 168, 108, 0.2);
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.contact-card.highlighted {
+    background: linear-gradient(135deg, rgba(223, 168, 108, 0.05), rgba(255, 255, 255, 0.02));
     border-color: rgba(223, 168, 108, 0.15);
 }
 
-.contact-info-panel h3 {
+.contact-card.highlighted:hover {
+    transform: translateY(-8px);
+    border-color: rgba(223, 168, 108, 0.3);
+}
+
+.contact-card-icon {
+    width: 64px;
+    height: 64px;
+    background: rgba(223, 168, 108, 0.1);
+    color: var(--color-accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(223, 168, 108, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover .contact-card-icon {
+    transform: scale(1.1);
+    background: rgba(223, 168, 108, 0.15);
+}
+
+.contact-card h3 {
     font-family: var(--font-serif);
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #ffffff;
     margin-bottom: 0.75rem;
 }
 
-.panel-desc {
-    color: var(--color-text-muted);
-    font-size: 1rem;
-    margin-bottom: 3rem;
-    line-height: 1.6;
-}
-
-.info-list {
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-}
-
-.info-item {
-    display: flex;
-    gap: 1.5rem;
-    align-items: flex-start;
-}
-
-.info-icon {
-    font-size: 1.25rem;
-    background: rgba(223, 168, 108, 0.08);
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    color: var(--color-accent);
-    flex-shrink: 0;
-    border: 1px solid rgba(223, 168, 108, 0.15);
-}
-
-.info-item h4 {
+.contact-card p {
     font-size: 1.05rem;
-    font-weight: 600;
-    color: #ffffff;
-    margin-bottom: 0.35rem;
-    letter-spacing: 0.02em;
-}
-
-.info-item p {
-    font-size: 1rem;
     color: var(--color-text-muted);
     line-height: 1.5;
-    margin: 0;
+    margin-bottom: 1.5rem;
 }
 
 .contact-link {
     color: var(--color-text-muted);
     text-decoration: none;
     transition: color 0.3s ease;
+    font-weight: 500;
 }
 
 .contact-link:hover,
@@ -94,22 +96,27 @@
     outline: none;
 }
 
+.card-hint {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: auto;
+}
+
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
-@media (max-width: 768px) {
-    .contact-info-panel {
-        padding: 3rem 2rem;
-        border-radius: 1.25rem;
-    }
-
-    .contact-info-panel h3 {
-        font-size: 1.75rem;
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        max-width: 500px;
     }
 }
 
 @media (max-width: 480px) {
-    .contact-info-panel {
+    .contact-card {
         padding: 2rem 1.5rem;
     }
 }
