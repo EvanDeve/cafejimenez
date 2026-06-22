@@ -72,11 +72,7 @@ export default function Header() {
 
   return (
     <>
-      {pathname === "/" || pathname === "/work-with-us" ? (
-        <div className="navbar-home-overlay">{navbar}</div>
-      ) : (
-        <div className="subpage-nav-container">{navbar}</div>
-      )}
+      <div className="navbar-home-overlay">{navbar}</div>
 
       <div
         className={`mobile-nav-overlay ${isOpen ? "open" : ""}`}
