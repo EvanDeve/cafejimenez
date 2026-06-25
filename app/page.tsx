@@ -119,15 +119,13 @@ export default function HomePage() {
             <FadeIn delay={0.1} direction="up" className="about-text-block about-text-1">
               <h3>Who We Are</h3>
               <p>
-                Coffee is literally in the heritage of the Jiménez family. At the heart of our mission is a desire
-                to roast excellent coffee and share hope in everything we do. This starts with our love for coffee
-                — including the way we purchase our beans, how the farmers are treated, and how we serve those who
-                purchase this product.
+                For generations, the Jiménez family has cultivated coffee in the highlands of Sarchí, Costa Rica — where altitude, volcanic soil, and mountain rainfall come together to create exceptional beans. For us, coffee was never just a crop; it was a way of life passed down with dedication and respect for the land.
+                Café Jiménez invites you to experience the tradition, craftsmanship, and quality that define a family's coffee.
               </p>
             </FadeIn>
 
             <FadeIn delay={0.2} direction="up" className="about-text-block about-text-2">
-              <h3>Hacienda La Minita</h3>
+              <h3>Our Coffee!</h3>
               <p>
                 Café Jiménez sources 100% single-origin Costa Rican coffee from the legendary Hacienda La Minita —
                 Rainforest Alliance certified and committed to strict environmental and social standards. The fruit
