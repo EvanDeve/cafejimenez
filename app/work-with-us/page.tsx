@@ -59,15 +59,15 @@ export default function WorkWithUsPage() {
                 priority
               />
               <Image
-                src="/applied_surety_1.jpeg"
-                alt="Applied Surety Custom Coffee Bag"
+                src="/s1.png"
+                alt="Client Custom Coffee Bag 1"
                 width={800}
                 height={1000}
                 priority
               />
               <Image
-                src="/applied_surety_2.jpeg"
-                alt="Applied Surety Custom Coffee Bag 2"
+                src="/s2.png"
+                alt="Client Custom Coffee Bag 2"
                 width={800}
                 height={1000}
                 priority
