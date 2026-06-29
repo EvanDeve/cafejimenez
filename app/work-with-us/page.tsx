@@ -45,15 +45,15 @@ export default function WorkWithUsPage() {
             </FadeIn>
             <FadeIn direction="up" delay={0.2} className="work-image-block">
               <Image
-                src="/screen.png"
-                alt="Café Jiménez Branded Coffee Bag Front"
+                src="/applied_surety_1.jpeg"
+                alt="Applied Surety Custom Coffee Bag"
                 width={800}
                 height={1000}
                 priority
               />
               <Image
-                src="/screen-back.png"
-                alt="Café Jiménez Branded Coffee Bag Back"
+                src="/applied_surety_2.jpeg"
+                alt="Applied Surety Custom Coffee Bag 2"
                 width={800}
                 height={1000}
                 priority
