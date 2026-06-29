@@ -31,6 +31,13 @@ const TESTIMONIALS = [
     role: "Operations Manager, Montana Provisions",
     featured: false,
   },
+  {
+    quote:
+      "I recently worked with Jorge Jimenez and Jimenez Coffee to create custom-labeled bags of premium coffee beans as client gifts for my business clients. From the very first conversation, Jorge was incredibly helpful, creative, and responsive—he nailed the custom label design perfectly on the first try, making the packaging look professional, thoughtful, and on-brand. The real star, though, is the coffee itself. Our clients didn’t just appreciate the creative gift—they genuinely loved the quality of the beans. Several have reached out to tell me how much they enjoyed the rich flavor, smoothness, and freshness. It turned a simple thank-you into something memorable and delicious.",
+    name: "Joshua Betz",
+    role: "President, Applied Surety Underwriters",
+    featured: false,
+  },
 ];
 
 export default function HomePage() {
