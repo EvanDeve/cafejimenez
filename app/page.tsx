@@ -12,31 +12,10 @@ const CLIENT_LOGOS = [
 const TESTIMONIALS = [
   {
     quote:
-      "This coffee has completely transformed our Sunday morning experience. The aroma fills the whole hall and the taste is unlike anything we've had before. Our congregation absolutely loves it.",
-    name: "Pastor David R.",
-    role: "Grace Community Church, Montana",
-    featured: false,
-  },
-  {
-    quote:
-      "We've tried dozens of single-origin coffees. Café Jiménez stands apart — the citrus brightness, the clean finish, the story behind it. This is coffee with a soul. We order two bags every month without fail.",
-    name: "Sarah M.",
-    role: "Coffee enthusiast & subscriber",
-    featured: true,
-  },
-  {
-    quote:
-      "We serve Café Jiménez in our office every day. The team noticed immediately — the quality is exceptional and knowing it's Rainforest Alliance certified makes it even better. Proud to support a mission-driven brand.",
-    name: "Marcus T.",
-    role: "Operations Manager, Montana Provisions",
-    featured: false,
-  },
-  {
-    quote:
-      "I recently worked with Jorge Jimenez and Jimenez Coffee to create custom-labeled bags of premium coffee beans as client gifts for my business clients. From the very first conversation, Jorge was incredibly helpful, creative, and responsive—he nailed the custom label design perfectly on the first try, making the packaging look professional, thoughtful, and on-brand. The real star, though, is the coffee itself. Our clients didn’t just appreciate the creative gift—they genuinely loved the quality of the beans. Several have reached out to tell me how much they enjoyed the rich flavor, smoothness, and freshness. It turned a simple thank-you into something memorable and delicious.",
+      "From the very first conversation, Jorge was incredibly helpful, creative, and responsive—he nailed the custom label design perfectly on the first try, making the packaging look professional, thoughtful, and on-brand. The real star, though, is the coffee itself. Our clients didn’t just appreciate the creative gift—they genuinely loved the quality of the beans.",
     name: "Joshua Betz",
     role: "President, Applied Surety Underwriters",
-    featured: false,
+    featured: true,
   },
 ];
 
