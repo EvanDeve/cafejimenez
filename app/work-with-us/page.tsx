@@ -117,6 +117,36 @@ export default function WorkWithUsPage() {
         </div>
       </section>
 
+      <section className="section work-testimonial-section">
+        <div className="section-container">
+          <FadeIn direction="up">
+            <div className="work-testimonial">
+              <div className="testimonial-stars" aria-label="5 stars">
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+              </div>
+              <blockquote className="work-testimonial-quote">
+                "I recently worked with Jorge Jimenez and Jimenez Coffee to create custom-labeled bags of premium coffee beans as client gifts for my business clients.
+                <br /><br />
+                From the very first conversation, Jorge was incredibly helpful, creative, and responsive—he nailed the custom label design perfectly on the first try, making the packaging look professional, thoughtful, and on-brand.
+                The real star, though, is the coffee itself. Our clients didn’t just appreciate the creative gift—they genuinely loved the quality of the beans. Several have reached out to tell me how much they enjoyed the rich flavor, smoothness, and freshness. It turned a simple thank-you into something memorable and delicious.
+                <br /><br />
+                If you’re looking for outstanding coffee beans (for personal use or gifting) and a partner who goes above and beyond on custom orders, I can’t recommend Jorge and Jimenez Coffee highly enough. Exceptional product and even better service. I’ll definitely be back for more!
+                <br /><br />
+                Thank you again Jorge—you made us look great!"
+              </blockquote>
+              <footer className="work-testimonial-author">
+                <strong>Joshua Betz</strong>
+                <span>President, Applied Surety Underwriters</span>
+              </footer>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
       <FadeIn direction="up" className="section work-cta">
         <div className="section-container">
           <h2>Turn every cup into a branded experience</h2>
