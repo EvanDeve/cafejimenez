@@ -17,6 +17,13 @@ const TESTIMONIALS = [
     role: "President, Applied Surety Underwriters",
     featured: true,
   },
+  {
+    quote:
+      "When you buy Cafe Jimenez you buy quality, commitment, and purpose. These coffee beans, from Costa Rica, are the gold standard of fantastic tasting coffee. Jorge is one of the best in the business and he knows how to take care of every client. Whether you are looking to gift coffee with your own personal packaging or simply looking for a great cup of coffee; look no further than Cafe Jimenez. You will not be disappointed.",
+    name: "Chris McCall",
+    role: "Artist/Songwriter",
+    featured: false,
+  },
 ];
 
 export default function HomePage() {

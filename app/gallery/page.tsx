@@ -8,34 +8,29 @@ export const metadata: Metadata = {
 
 const GALLERY_IMAGES: GalleryImage[] = [
   {
-    src: "/gallery-mountains.png",
-    alt: "Beautiful coffee plantation highlands in Costa Rica's Tarrazú region",
-    caption: "Highlands of Tarrazú",
+    src: "/gallery/1.jpeg",
+    alt: "Café Jiménez gallery image 1",
+    caption: "Café Jiménez",
   },
   {
-    src: "/gallery-roasting.png",
-    alt: "Artisan coffee roasting process focusing on whole beans",
-    caption: "Artisan Roasting",
+    src: "/gallery/2.jpeg",
+    alt: "Café Jiménez gallery image 2",
+    caption: "Café Jiménez",
   },
   {
-    src: "/gallery-barista.png",
-    alt: "Barista pulling a fresh double shot of espresso with rich golden crema",
-    caption: "Perfect Extraction",
+    src: "/gallery/3.jpeg",
+    alt: "Café Jiménez gallery image 3",
+    caption: "Café Jiménez",
   },
   {
-    src: "/hero.png",
-    alt: "A freshly sealed bag of Café Jiménez Single Origin on a rustic wooden table",
-    caption: "Ready Package",
+    src: "/gallery/4.jpeg",
+    alt: "Café Jiménez gallery image 4",
+    caption: "Café Jiménez",
   },
   {
-    src: "/product-tarrazu.png",
-    alt: "Freshly roasted whole coffee beans scattered on a table",
-    caption: "Premium Beans",
-  },
-  {
-    src: "/gallery-barista.png",
-    alt: "Barista pouring steamed milk to make latte art in a coffee cup",
-    caption: "Latte Art Ritual",
+    src: "/gallery/5.jpeg",
+    alt: "Café Jiménez gallery image 5",
+    caption: "Café Jiménez",
   },
 ];
 

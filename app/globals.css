@@ -425,7 +425,7 @@ body {
 }
 
 /* RESPONSIVE — elementos compartidos por todas las páginas */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .container {
         padding-left: 6vw;
         padding-right: 6vw;
