@@ -7,6 +7,7 @@ export type GalleryImage = {
   src: string;
   alt: string;
   caption: string;
+  type?: 'image' | 'video';
 };
 
 export default function Lightbox({ images }: { images: GalleryImage[] }) {
@@ -74,7 +75,23 @@ export default function Lightbox({ images }: { images: GalleryImage[] }) {
               }
             }}
           >
-            <Image src={image.src} alt={image.alt} fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+            {image.type === "video" ? (
+              <video
+                src={image.src}
+                className="gallery-video-thumbnail"
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
+            ) : (
+              <Image src={image.src} alt={image.alt} fill sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+            )}
+            {image.type === "video" && (
+              <div className="video-play-icon">
+                <i className="fa-solid fa-circle-play" />
+              </div>
+            )}
             <div className="gallery-hover">
               <span>{image.caption}</span>
             </div>
@@ -112,7 +129,11 @@ export default function Lightbox({ images }: { images: GalleryImage[] }) {
         <div className="lightbox-content">
           {/* plain <img>: object-fit: contain with no fixed box needs the browser's natural
               intrinsic-aspect-ratio scaling that next/image's `fill` mode doesn't provide */}
-          {current && <img src={current.src} alt={current.alt} className="lightbox-image" />}
+          {current?.type === "video" ? (
+            <video src={current.src} controls autoPlay playsInline className="lightbox-video" />
+          ) : (
+            current && <img src={current.src} alt={current.alt} className="lightbox-image" />
+          )}
           <p className="lightbox-caption">{current?.caption}</p>
         </div>
       </div>

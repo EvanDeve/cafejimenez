@@ -32,6 +32,33 @@ const GALLERY_IMAGES: GalleryImage[] = [
     alt: "Café Jiménez gallery image 5",
     caption: "Café Jiménez",
   },
+  {
+    src: "/gallery/6.jpeg",
+    alt: "Café Jiménez gallery image 6",
+    caption: "Café Jiménez",
+  },
+  {
+    src: "/gallery/7.jpeg",
+    alt: "Café Jiménez gallery image 7",
+    caption: "Café Jiménez",
+  },
+  {
+    src: "/gallery/8.jpeg",
+    alt: "Café Jiménez gallery image 8",
+    caption: "Café Jiménez",
+  },
+  {
+    src: "/gallery/v1.mp4",
+    alt: "Café Jiménez video 1",
+    caption: "Café Jiménez Video",
+    type: "video",
+  },
+  {
+    src: "/gallery/v2.mp4",
+    alt: "Café Jiménez video 2",
+    caption: "Café Jiménez Video",
+    type: "video",
+  },
 ];
 
 export default function GalleryPage() {
